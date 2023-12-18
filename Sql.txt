@@ -1,0 +1,21 @@
+CREATE DATABASE ATIWEB;
+
+USE ATIWEB;
+
+CREATE TABLE Course (
+    CourseID INT PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(255),
+    TitleInShort VARCHAR(50),
+    Description TEXT
+);
+
+CREATE TABLE Lecturer (
+    LecID INT PRIMARY KEY AUTO_INCREMENT,
+    Name VARCHAR(100),
+    Email VARCHAR(100) UNIQUE,
+    Designation VARCHAR(50),
+    CourseID INT,
+    Gender VARCHAR(10),
+    Password VARCHAR(255),
+    FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
+);

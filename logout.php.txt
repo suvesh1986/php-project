@@ -1,0 +1,5 @@
+<?php
+// Include logout code
+
+// Redirect to login page after logout
+?>

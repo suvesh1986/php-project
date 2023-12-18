@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecturer Registration</title>
+</head>
+<body>
+    <h2>Lecturer Registration</h2>
+    <form action="register_process.php" method="post">
+        <label for="full_name">Name in Full:</label>
+        <input type="text" id="full_name" name="full_name" required><br><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br><br>
+
+        <label for="designation">Designation:</label>
+        <select id="designation" name="designation" required>
+            <option value="Assistant Lecturer">Assistant Lecturer</option>
+            <option value="Lecturer">Lecturer</option>
+            <option value="Senior Lecturer I">Senior Lecturer I</option>
+            <option value="Senior Lecturer II">Senior Lecturer II</option>
+        </select><br><br><br>
+
+        <label for="course">Course:</label>
+        <!-- Fetch course list from the database and populate the options -->
+        <select id="course" name="course" required>
+            <option value="HNDA">HNDA</option>
+            <option value="HNDIT">HNDIT</option>
+            <option value="HNDE">HNDE</option>
+            <!-- Add more options as needed -->
+        </select><br><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

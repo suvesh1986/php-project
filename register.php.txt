@@ -1,0 +1,29 @@
+<?php
+// Include database connection code
+
+// Process the form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Validate and sanitize input data
+
+    // Insert data into the Lecturer table
+    // Hash the password for security
+
+    // Redirect to login page
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecturer Registration</title>
+</head>
+<body>
+    <h2>Lecturer Registration</h2>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <!-- Form fields for Name, Email, Designation, Course, Gender, Password -->
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>

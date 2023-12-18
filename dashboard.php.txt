@@ -1,0 +1,19 @@
+<?php
+// Include authentication code
+
+// Check if the user is logged in, else redirect to the login page
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecturer Dashboard</title>
+</head>
+<body>
+    <h2>Welcome to the Dashboard, <?php echo $loggedInUsername; ?></h2>
+    <!-- Display other dashboard content -->
+
+    <a href="logout.php">Logout</a>
+</body>
+</html>

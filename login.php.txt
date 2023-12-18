@@ -1,0 +1,26 @@
+<?php
+// Include database connection code
+
+// Process the form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Validate and sanitize input data
+
+    // Check credentials and redirect to dashboard if login is successful
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lecturer Login</title>
+</head>
+<body>
+    <h2>Lecturer Login</h2>
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <!-- Form fields for Email and Password -->
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
